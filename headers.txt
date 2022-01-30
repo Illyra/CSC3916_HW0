@@ -1,0 +1,71 @@
+Request Headers:
+
+User-Agent: PostmanRuntime/7.29.0
+The client's string for the server to use to id the apps, os, or user agent
+
+Accept: */*
+What is being accepted meaning what is the acceptable response type
+
+Postman-Token: 9af57923-980c-4a7a-817f-9d2d7bcf5b11
+Basically a token/id for the header
+
+Host: www.googleapis.com
+Would request the header to specify the host and port number to which the server it is sending its request to
+
+Accept-Encoding: gzip, deflate, br
+Would request an HTTP header to indicate the encoding so that the client could understand it. Simply means the type of
+encodings it would accept for the response.
+
+Connection: keep-alive
+Allows a sender to hint how the connection could be used to timeout and remain open for multiple requests/responses.
+
+
+Response Header:
+
+Content-Type: application/json; charset=UTF-8
+The type of content that is being requested in an url-encoded application. Would provide information about the content
+type of what's being returned.
+
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Would be used to prevent caching. Would describe how parts of the requests message would be influenced by
+the content of the response.
+
+Content-Encoding: gzip
+The format of the data that its being encoded to. It would let the recipient know how to decode the payload/message
+and obtain the original payload content. Would be used to compress the data without losing the origin media type.
+
+Date: Sun, 30 Jan 2022 14:27:45 GMT
+The current date and time in GMT
+
+Server: ESF
+The software the server used by the origin to handle the requests if and only if the server generates a response.
+
+Cache-Control: private
+Both requests and responses that control caching in browsers. Means how the requests and responses are handled.
+
+X-XSS-Protection: 0
+Feature in Internet Explorer, chrome, and safari that would stop a page from loading when they would detect a cross-site
+script attack. Is basically a security measure placed. Is disabled due to most modern browsers that disables it.
+
+X-Frame-Options: SAMEORIGIN
+Would be used to indicate whether a browser would be able to render a page by deciding if it's an object, frame, or
+embed. In this case SAMEORIGIN means its displayed as a frame on the same origin as the page itself.
+
+X-Content-Type-Options: nosniff
+marker used by the server to indicate MIME types in the Content-Type to be followed and not changed. It would allow
+for MIME type sniffing by stating that MIME's can't be configured.
+
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Allows for a server to indicate another network location, and be treated as authoritative for that origin when making
+a request.
+
+Transfer-Encoding: chunked
+Would allow for messages between nodes. Basically means to transfer content. In this case its chunked meaning it would
+send data in chunks.
+
+
+
+**References**
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
